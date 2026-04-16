@@ -63,6 +63,54 @@
   color: #6b5b45;
 }
 
+#page-header.not-home-page {
+  height: 220px;
+  background-position: center 42%;
+}
+
+#page-header.not-home-page #page-site-info {
+  top: 108px;
+  padding: 0 18px;
+}
+
+#page-header.not-home-page #site-title {
+  font-size: 2.15rem;
+  letter-spacing: 0.08em;
+}
+
+#page-header.post-bg {
+  height: 260px;
+  background-position: center 42%;
+}
+
+#page-header.post-bg #post-info {
+  bottom: 24px;
+}
+
+#page-header.post-bg #post-info .post-title {
+  font-size: 2rem;
+  line-height: 1.35;
+}
+
+#page-header.post-bg #post-info .post-meta {
+  color: #7b694d;
+}
+
+#page-header.not-home-page::after,
+#page-header.post-bg::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.08), rgba(79, 61, 33, 0.18));
+  content: "";
+  pointer-events: none;
+}
+
+#page-header.not-home-page #page-site-info,
+#page-header.post-bg #post-info,
+#page-header #nav {
+  z-index: 1;
+}
+
 #recent-posts > .recent-post-item,
 #aside-content .card-widget,
 #post,
@@ -117,6 +165,53 @@
   border-radius: 22px;
 }
 
+#aside-content .card-announcement,
+#aside-content .card-tags,
+#aside-content .card-archives,
+#aside-content .card-webinfo {
+  display: none;
+}
+
+#aside-content .sticky_layout {
+  top: 90px;
+}
+
+.post #aside-content > .card-info,
+.post #aside-content > .card-announcement,
+.post #aside-content .card-recent-post,
+.post #aside-content .card-categories,
+.post #aside-content .card-tags,
+.post #aside-content .card-archives,
+.post #aside-content .card-webinfo {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .layout:has(> #page),
+  .layout:has(> #archive) {
+    max-width: 980px;
+    justify-content: center;
+  }
+
+  .layout:has(> #page) > #page,
+  .layout:has(> #archive) > #archive {
+    width: 100% !important;
+  }
+
+  .layout:has(> #page) > #aside-content,
+  .layout:has(> #archive) > #aside-content {
+    display: none;
+  }
+
+  .post .layout > #post {
+    width: 78%;
+  }
+
+  .post .layout > #aside-content {
+    width: 22%;
+  }
+}
+
 #aside-content .card-info .author-info-name {
   font-size: 1.35rem;
   letter-spacing: 0.06em;
@@ -166,6 +261,30 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  #page-header.not-home-page {
+    height: 150px;
+  }
+
+  #page-header.not-home-page #page-site-info {
+    top: 78px;
+  }
+
+  #page-header.not-home-page #site-title {
+    font-size: 1.65rem;
+  }
+
+  #page-header.post-bg {
+    height: 210px;
+  }
+
+  #page-header.post-bg #post-info {
+    bottom: 18px;
+  }
+
+  #page-header.post-bg #post-info .post-title {
+    font-size: 1.45rem;
+  }
+
   #site-info {
     width: calc(100% - 28px);
     padding: 1.5rem 1.3rem;
