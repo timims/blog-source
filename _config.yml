@@ -1,0 +1,88 @@
+title: Kaiqi Notes
+subtitle: 工程实践型技术博客
+description: 聚焦数据库、后端、系统与工程问题的技术博客
+keywords:
+  - 数据库
+  - TimescaleDB
+  - PostgreSQL
+  - Java
+  - Arch Linux
+  - 性能优化
+author: zhangkaiqi
+language: zh-CN
+timezone: Asia/Shanghai
+url: https://timims.github.io
+permalink: posts/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
+theme: butterfly
+
+deploy:
+  type: git
+  repo: git@github.com:timims/timims.github.io.git
+  branch: main
+
+index_generator:
+  path: ''
+  per_page: 8
+  order_by: -date
+
+default_category: 未分类
+category_map:
+tag_map:
+
+meta_generator: true
+
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+per_page: 10
+pagination_dir: page
+
+include:
+exclude:
+ignore:
+
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+  limit: 10
+
+feed:
+  enable: false
+
+marked:
+  prependRoot: true
+  postAsset: false
+
+archive_generator:
+  enabled: true
+  per_page: 10
+  yearly: true
+  monthly: true
+
+category_generator:
+  per_page: 10
+
+tag_generator:
+  per_page: 10

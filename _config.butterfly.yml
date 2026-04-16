@@ -1,0 +1,185 @@
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+menu:
+  首页: / || fas fa-house
+  归档: /archives/ || fas fa-box-archive
+  分类: /categories/ || fas fa-folder-tree
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-user
+
+favicon: /img/avatar.svg
+
+avatar:
+  img: /img/avatar.svg
+  effect: false
+
+index_img: /img/index-banner.svg
+default_top_img: /img/index-banner.svg
+archive_img: /img/index-banner.svg
+tag_img: /img/index-banner.svg
+category_img: /img/index-banner.svg
+
+footer_img: false
+background:
+  - "linear-gradient(135deg, #f4f7fb 0%, #eef4ff 45%, #ffffff 100%)"
+
+subtitle:
+  enable: true
+  effect: true
+  source: false
+  sub:
+    - 数据库、系统、后端与工程实践
+    - 记录真实问题，沉淀可复用方案
+
+index_layout: 3
+
+toc:
+  post: true
+  page: true
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: false
+    label: true
+  post:
+    position: left
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+theme_color:
+  enable: true
+  main: "#2f6fed"
+  paginator: "#2f6fed"
+  button_hover: "#1f4fc7"
+  text_selection: "#8ab4ff"
+  link_color: "#2f6fed"
+  meta_color: "#5a6783"
+  hr_color: "#d8e2f0"
+  code_foreground: "#334155"
+  code_background: "#edf3ff"
+  toc_color: "#2f6fed"
+  blockquote_padding_color: "#2f6fed"
+  blockquote_background_color: "#f3f7ff"
+  scrollbar_color: "#8ab4ff"
+  meta_theme_color_light: "#f4f7fb"
+  meta_theme_color_dark: "#0f172a"
+
+code_blocks:
+  theme: light
+  macStyle: true
+  height_limit: 360
+  word_wrap: false
+  copy: true
+  language: true
+  shrink: false
+  fullpage: false
+
+search:
+  use: local_search
+  placeholder: 搜索文章
+  local_search:
+    preload: false
+    top_n_per_article: 1
+    unescape: false
+    pagination:
+      enable: true
+      hitsPerPage: 8
+
+social:
+  fab fa-github: https://github.com/timims || GitHub || '#24292e'
+  fas fa-envelope: mailto:2787475460@qq.com || Email || '#2f6fed'
+
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+    - /img/index-banner.svg
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  card_author:
+    enable: true
+    description: 聚焦 TimescaleDB、Java、Linux 与工程问题
+    button:
+      enable: true
+      icon: fas fa-arrow-right
+      text: 查看关于页
+      link: /about/
+  card_announcement:
+    enable: true
+    content: 欢迎来到工程实践型技术博客，这里记录真实问题和可复用解法。
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+    sort_order: -1
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+    sort_order: -1
+  card_tags:
+    enable: true
+    limit: 20
+    color: true
+    sort_order: random
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+
+comments:
+  use:
+  text: true
+  lazyload: false
+  count: false
+  card_post_count: false
+
+giscus:
+  repo: timims/timims.github.io
+  repo_id:
+  category_id:
+  light_theme: light
+  dark_theme: dark
+  js:
+  option:
+
+share:
+  use: sharejs
+
+post_copyright:
+  enable: true
+  decode: false
+  author_href: https://github.com/timims
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+baidu_analytics:
+google_analytics:
