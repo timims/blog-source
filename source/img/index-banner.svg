@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="index banner">
   <defs>
     <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#f4f7fb"/>
-      <stop offset="45%" stop-color="#eaf1ff"/>
-      <stop offset="100%" stop-color="#ffffff"/>
+      <stop offset="0%" stop-color="#f8f3e9"/>
+      <stop offset="45%" stop-color="#f0e5cf"/>
+      <stop offset="100%" stop-color="#fffaf2"/>
     </linearGradient>
     <linearGradient id="accent" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#2f6fed"/>
-      <stop offset="100%" stop-color="#4aa6ff"/>
+      <stop offset="0%" stop-color="#b29a6c"/>
+      <stop offset="100%" stop-color="#cfba92"/>
     </linearGradient>
   </defs>
   <rect width="1600" height="900" fill="url(#bg)"/>
-  <circle cx="1270" cy="180" r="180" fill="#dfeaff"/>
-  <circle cx="1320" cy="690" r="230" fill="#edf4ff"/>
-  <circle cx="250" cy="740" r="140" fill="#e5efff"/>
-  <rect x="170" y="170" width="620" height="420" rx="28" fill="#ffffff" stroke="#d7e4ff"/>
-  <rect x="210" y="220" width="280" height="18" rx="9" fill="#2f6fed" opacity="0.18"/>
-  <rect x="210" y="270" width="420" height="18" rx="9" fill="#2f6fed" opacity="0.12"/>
-  <rect x="210" y="320" width="360" height="18" rx="9" fill="#2f6fed" opacity="0.12"/>
+  <circle cx="1270" cy="180" r="180" fill="#efe3cb"/>
+  <circle cx="1320" cy="690" r="230" fill="#f4ead8"/>
+  <circle cx="250" cy="740" r="140" fill="#f0e4cf"/>
+  <rect x="170" y="170" width="620" height="420" rx="28" fill="#fffdf8" stroke="#e7dac1"/>
+  <rect x="210" y="220" width="280" height="18" rx="9" fill="#b29a6c" opacity="0.18"/>
+  <rect x="210" y="270" width="420" height="18" rx="9" fill="#b29a6c" opacity="0.12"/>
+  <rect x="210" y="320" width="360" height="18" rx="9" fill="#b29a6c" opacity="0.12"/>
   <rect x="210" y="410" width="540" height="110" rx="20" fill="url(#accent)"/>
-  <text x="930" y="320" fill="#16315f" font-size="72" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Kaiqi Notes</text>
-  <text x="930" y="408" fill="#40618d" font-size="34" font-family="Segoe UI, Arial, sans-serif">数据库 · 后端 · 系统 · 工程实践</text>
-  <text x="930" y="485" fill="#40618d" font-size="26" font-family="Segoe UI, Arial, sans-serif">面向真实问题的技术写作与经验沉淀</text>
+  <text x="930" y="320" fill="#4d3f2c" font-size="72" font-family="Segoe UI, Arial, sans-serif" font-weight="700">AURORA</text>
+  <text x="930" y="408" fill="#79664a" font-size="34" font-family="Segoe UI, Arial, sans-serif">数据库 · 后端 · 系统 · 工程实践</text>
+  <text x="930" y="485" fill="#79664a" font-size="26" font-family="Segoe UI, Arial, sans-serif">面向真实问题的技术写作与经验沉淀</text>
   <rect x="930" y="548" width="240" height="64" rx="18" fill="url(#accent)"/>
-  <text x="992" y="589" fill="#ffffff" font-size="28" font-family="Segoe UI, Arial, sans-serif">Start Writing</text>
+  <text x="980" y="589" fill="#ffffff" font-size="28" font-family="Segoe UI, Arial, sans-serif">Explore Posts</text>
 </svg>

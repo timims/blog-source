@@ -1,0 +1,186 @@
+:root {
+  --aurora-khaki: #b29a6c;
+  --aurora-khaki-deep: #8e7648;
+  --aurora-khaki-soft: #cfba92;
+  --aurora-bg: #f8f3e9;
+  --aurora-card: rgba(255, 252, 245, 0.94);
+  --aurora-border: rgba(178, 154, 108, 0.22);
+  --aurora-shadow: 0 18px 42px rgba(96, 76, 43, 0.10);
+  --aurora-shadow-hover: 0 24px 56px rgba(96, 76, 43, 0.16);
+}
+
+[data-theme='light'] {
+  --font-color: #483b2b;
+  --text-highlight-color: #8e7648;
+  --text-bg-hover: #f2e8d5;
+  --light-grey: #8a785e;
+  --second-text-color: #8a785e;
+  --card-bg: var(--aurora-card);
+}
+
+#page-header::before {
+  background: linear-gradient(135deg, rgba(83, 64, 32, 0.18), rgba(178, 154, 108, 0.12), rgba(255, 250, 242, 0.08));
+}
+
+#page-header.nav-fixed #nav,
+#page-header.not-top-img #nav {
+  background: rgba(255, 248, 237, 0.74);
+  backdrop-filter: blur(18px) saturate(145%);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  border-bottom: 1px solid rgba(178, 154, 108, 0.14);
+  box-shadow: 0 12px 30px rgba(96, 76, 43, 0.08);
+}
+
+#nav .site-page,
+#nav .site-name {
+  color: #4b3d2c;
+}
+
+#nav .site-page:hover,
+#nav .menus_item_child li:hover a,
+#nav .site-name:hover {
+  color: var(--aurora-khaki-deep);
+}
+
+#site-info {
+  width: min(740px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 2rem 2.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 30px;
+  background: rgba(255, 251, 244, 0.34);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--aurora-shadow);
+}
+
+#site-title {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+#site-subtitle {
+  color: #6b5b45;
+}
+
+#recent-posts > .recent-post-item,
+#aside-content .card-widget,
+#post,
+#page,
+#archive {
+  border: 1px solid var(--aurora-border);
+  background: var(--aurora-card);
+  box-shadow: var(--aurora-shadow);
+}
+
+#recent-posts > .recent-post-item {
+  overflow: hidden;
+  border-radius: 24px;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+#recent-posts > .recent-post-item:hover,
+#aside-content .card-widget:hover,
+#post:hover,
+#page:hover,
+#archive:hover {
+  transform: translateY(-6px);
+  border-color: rgba(178, 154, 108, 0.34);
+  box-shadow: var(--aurora-shadow-hover);
+}
+
+#recent-posts > .recent-post-item .post_cover img {
+  transition: transform 0.35s ease;
+}
+
+#recent-posts > .recent-post-item:hover .post_cover img {
+  transform: scale(1.04);
+}
+
+#recent-posts > .recent-post-item .recent-post-info {
+  padding: 1.65rem 1.8rem;
+}
+
+#recent-posts > .recent-post-item .article-title,
+#post-info .post-title,
+#page-header #site-title {
+  color: #453725;
+}
+
+#recent-posts > .recent-post-item .article-meta-wrap,
+#post-meta,
+#site-info #site-subtitle {
+  color: #7b694d;
+}
+
+#aside-content .card-widget {
+  border-radius: 22px;
+}
+
+#aside-content .card-info .author-info-name {
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+}
+
+#aside-content .card-info #card-info-btn {
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--aurora-khaki), var(--aurora-khaki-soft));
+  box-shadow: 0 12px 22px rgba(178, 154, 108, 0.22);
+}
+
+#aside-content .card-info #card-info-btn:hover {
+  background: linear-gradient(135deg, var(--aurora-khaki-deep), var(--aurora-khaki));
+}
+
+#aside-content .item-headline i,
+.article-sort-title::before,
+#pagination .page-number.current,
+#pagination a:hover,
+.card-info-social-icons .social-icon:hover,
+a:hover {
+  color: var(--aurora-khaki-deep);
+}
+
+#pagination .page-number.current,
+#pagination a.extend:hover,
+#pagination a.page-number:hover {
+  background: rgba(178, 154, 108, 0.14);
+  border-color: rgba(178, 154, 108, 0.24);
+}
+
+.layout > div:first-child:not(.recent-posts) {
+  animation: none;
+}
+
+.card-tag-cloud a,
+.article-meta__tags a,
+.article-meta__categories a {
+  border-radius: 999px;
+}
+
+::selection {
+  background: rgba(178, 154, 108, 0.26);
+  color: #3f321f;
+}
+
+@media (max-width: 768px) {
+  #site-info {
+    width: calc(100% - 28px);
+    padding: 1.5rem 1.3rem;
+    border-radius: 24px;
+  }
+
+  #site-title {
+    letter-spacing: 0.08em;
+  }
+
+  #recent-posts > .recent-post-item:hover,
+  #aside-content .card-widget:hover,
+  #post:hover,
+  #page:hover,
+  #archive:hover {
+    transform: none;
+  }
+}

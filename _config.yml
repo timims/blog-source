@@ -1,4 +1,4 @@
-title: Kaiqi Notes
+title: aurora
 subtitle: 工程实践型技术博客
 description: 聚焦数据库、后端、系统与工程问题的技术博客
 keywords:
@@ -8,7 +8,7 @@ keywords:
   - Java
   - Arch Linux
   - 性能优化
-author: zhangkaiqi
+author: aurora
 language: zh-CN
 timezone: Asia/Shanghai
 url: https://timims.github.io

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="avatar">
   <defs>
     <linearGradient id="avatarGradient" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#2f6fed"/>
-      <stop offset="100%" stop-color="#4aa6ff"/>
+      <stop offset="0%" stop-color="#b29a6c"/>
+      <stop offset="100%" stop-color="#cfba92"/>
     </linearGradient>
   </defs>
   <rect width="240" height="240" rx="44" fill="url(#avatarGradient)"/>
